@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
+
+/* -----------1. Global Styles ------------ */
+:root {
+  --bg-color: rgb(24, 24, 24);
+  --primary-text-color: white;
+  --secondary-text-color: rgb(141, 140, 140);
+  --third-text-color: rgb(209, 209, 209);
+  --accent-color: #ffc627;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--primary-text-color);
+  background: var(--bg-color);
+  line-height: 1.4;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* -----------2. Typography ------------ */
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+}
+
+/* -----------3. Layout ------------ */
+a {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+.current {
+  border-right: 3px solid var(--accent-color);
+}
+
+.current i {
+  color: var(--accent-color);
+}
+
+.current p {
+  color: var(--primary-text-color);
+}
+
+.bold {
+  color: var(--accent-color);
+}
+
+/* ------3.1 Layouts: buttons------ */
+button {
+  color: var(--primary-text-color);
+  text-transform: capitalize;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.watch-btn,
+.seemore-btn {
+  background: var(--accent-color);
+  color: var(--bg-color);
+  border-radius: 10px;
+}
+
+.watchlist-btn {
+  background: rgba(7, 7, 7, 0.747);
+  color: var(--bg-color);
+  color: var(--accent-color);
+  border-radius: 10px;
+}
+
+.content-btn {
+  font-size: 1.2em;
+  color: var(--secondary-text-color);
+}
+
+.section-header-btn {
+  font-size: 1em;
+}
+
+.section-header-btn::after {
+  content: ">";
+  color: var(--accent-color);
+  transform: scale(1.5);
+  padding-left: 0.5em;
+}
+
+.scroll-btn {
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 50%;
+  padding: 1em;
+}
+
+/* -----------4. Areas ------------ */
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.container-padding {
+  padding: 3em;
+}
+
+/* -----------4.1 Menu: general ------------ */
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding-right: 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+
+.nav-links h2 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: var(--third-text-color);
+  padding-bottom: 0.7em;
+}
+
+.nav-links i {
+  width: 2em;
+}
+
+.nav-links a {
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a:hover {
+  color: var(--third-text-color);
+}
+
+.link {
+  display: flex;
+  margin: 0.6em 0;
+}
+
+/* ------4.1.a logo------ */
+.color-text {
+  color: var(--accent-color);
+}
+
+/* -----------4.2 Main content: general ------------ */
+.main-content {
+  border-left: 0.1px solid rgb(43, 42, 42);
+  border-right: 0.1px solid rgb(43, 42, 42);
+  padding-left: 0;
+  padding-right: 0;
+  overflow-y: scroll;
+}
+
+/* ------4.2.a Movies: General ------ */
+.content-buttons-container {
+  display: flex;
+  padding-bottom: 2em;
+  gap: 2em;
+  width: 85%;
+  margin: auto;
+}
+
+.content {
+  width: 85%;
+  margin: auto;
+}
+
+.current-content {
+  color: var(--primary-text-color);
+}
+
+section {
+  margin-top: 3em;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.scroll-btn-container {
+  display: flex;
+  gap: 0.7em;
+}
+
+/* 4.2.a Movies: Banner */
+
+.banner {
+  background: url(./images/Spider-man-2-aangekondigd-tijdens-PlayStation-Showcase.jpeg) no-repeat
+    center center/cover;
+  background: url(./images/banner.jpeg) no-repeat center center/cover;
+  height: 35vh;
+  border-radius: 30px;
+}
+
+.banner-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 5% 5%;
+}
+
+.banner-text h1 {
+  font-size: 2em;
+}
+
+.banner-text > p {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  color: var(--third-text-color);
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.movies .banner .watch-btn {
+  padding: 1em 2em;
+  gap: 1em;
+}
+
+.movies .banner .watchlist-btn {
+  padding: 1em 1.2em;
+}
+
+.movies .banner .watchlist-btn i {
+  font-size: 1.2em;
+}
+
+/* 4.2.b Movies: Continue Watching */
+.movies-container {
+  display: flex;
+  flex: 0 0 33.3333%;
+  gap: 2em;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.continue-watching-movie {
+  min-height: 12vh;
+  flex: 1 0 30%;
+  position: relative;
+}
+
+.continue-watching-movie:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.continue-watching-movie:hover:before {
+  cursor: pointer;
+  content: "\f144";
+  font-family: "Font Awesome 5 Free";
+  font-size: 3em;
+  position: absolute;
+  left: 37%;
+  top: 15%;
+  color: var(--accent-color);
+}
+
+.movie-banner {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.banner-1 {
+  background: url(./images/movies/matrix.jpg) no-repeat center center/cover;
+}
+.banner-2 {
+  background: url(./images/movies/jamesbond.jpeg) no-repeat center center/cover;
+}
+.banner-3 {
+  background: url(./images/movies/encanto.jpeg) no-repeat center center/cover;
+}
+
+.banner-4 {
+  background: url(./images/movies/fifthyshadesdarker.jpeg) no-repeat center center/cover;
+}
+.banner-5 {
+  background: url(./images/movies/ghostbuster.jpeg) no-repeat center center/cover;
+}
+.banner-6 {
+  background: url(./images/movies/joker.jpg) no-repeat center center/cover;
+}
+
+.watch-balk {
+  background-color: var(--accent-color);
+  height: 3px;
+}
+
+.balk-1 {
+  width: 60%;
+}
+.balk-2 {
+  width: 30%;
+}
+
+.balk-3 {
+  width: 50%;
+}
+
+.continue-watching-movie p {
+  font-size: 0.7em;
+  background: rgba(53, 53, 53, 0.918);
+  padding: 1em;
+  border-radius: 0 0 12px 12px;
+}
+
+/* 4.2 Movies */
+.movies-container-style {
+  display: flex;
+  gap: 1.5em;
+  padding-bottom: 3em;
+}
+
+.movie {
+  flex: 0 0 18%;
+  transition: 0.5s;
+}
+
+.movie:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+.movies-container-style .movie img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.movies-container-style p {
+  color: var(--secondary-text-color);
+  font-size: 0.7em;
+  text-align: center;
+}
+
+/* -----------4.3 Aside: General ------------ */
+.aside {
+  overflow-y: scroll;
+}
+
+.seemore-btn {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 1em;
+}
+
+
+/* 4.3.a search */
+.search {
+  display: flex;
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 50px;
+  padding: 10px 10px;
+}
+
+.search i {
+  color: var(--secondary-text-color);
+}
+
+.search input {
+  background: none;
+  border: none;
+  margin-left: 1em;
+  color: white;
+  text-transform: capitalize;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+/* 4.3.b populair */
+.aside-movies {
+  margin: 3em 0;
+}
+
+.aside-movie {
+  display: flex;
+  gap: 1em;
+  margin: 1em 0;
+}
+
+.aside-movie-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.aside-movie img {
+  width: 5em;
+  height: 7em;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.aside-movie a,
+.aside-movie p:last-child {
+  color: var(--third-text-color);
+}
+
+.aside-movie p {
+  font-size: 0.7em;
+  color: var(--secondary-text-color);
+}
+
+.aside-movie i {
+  color: var(--accent-color);
+  font-size: 2em;
+  margin-right: 0.5em;
+}
+
+.movie-rating {
+  display: flex;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}

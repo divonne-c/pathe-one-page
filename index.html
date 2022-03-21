@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/af72fe41a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./media.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--------------  Menu -------------->
+      <nav class="nav-menu container-padding">
+        <!-- Logo -->
+        <div class="logo">
+          <h1>Pathé <span class="color-text">Home</span></h1>
+        </div>
+
+        <!-- Dropdown menu -->
+        <div class="nav-dropdown hidden">
+          <!-- dropwdown button -->
+          <button id="dropdown-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Dropdown links -->
+          <div class="dropdown-menu hidden">
+            <div class="dropdown-menu-container">
+              <div class="menu nav-links">
+                <h2>Menu</h2>
+                <a class="current link" href="#">
+                  <i class="fa-solid fa-house"></i>
+                  <p>Home</p>
+                </a>
+                <a class="link" href="#">
+                  <!-- <i class="fa-solid fa-masks-theater"></i> -->
+                  <i class="fa-solid fa-clone"></i>
+                  <p>genres</p>
+                </a>
+                <a class="link" href="#">
+                  <i class="fa-solid fa-circle-plus"></i>
+                  <p>new</p>
+                </a>
+                <a class="link" href="#">
+                  <i class="fa-solid fa-compass"></i>
+                  <p>discover</p>
+                </a>
+                <a class="link" href="#">
+                  <i class="fa-solid fa-clock"></i>
+                  <p>coming soon</p>
+                </a>
+              </div>
+      
+              <!-- Account -->
+              <div class="account nav-links">
+                <h2>Account</h2>
+                <a class="link" href="#">
+                  <i class="fa-solid fa-user"></i>
+                  <p>my account</p>
+                </a>
+                <a class="link" href="#">
+                  <i class="fa-solid fa-film"></i>
+                  <p>my movies</p>
+                </a>
+                <a class="link" href="#">
+                  <i class="fa-regular fa-bookmark"></i>
+                  <p>my watchlist</p>
+                </a>
+              </div>
+      
+              <!-- General -->
+              <div class="general nav-links">
+                <h2>General</h2>
+                <a class="link" href="#">
+                  <i class="fa-solid fa-gear"></i>
+                  <p>Settings</p>
+                </a>
+                <a class="link" href="#">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <p>help</p>
+                </a>
+                <a class="link" href="#">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  <p>log out</p>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+
+        <!-- Menu -->
+        <div class="menu">
+          <div class="menu nav-links">
+            <h2>Menu</h2>
+            <a class="current link" href="#">
+              <i class="fa-solid fa-house"></i>
+              <p>Home</p>
+            </a>
+            <a class="link" href="#">
+              <!-- <i class="fa-solid fa-masks-theater"></i> -->
+              <i class="fa-solid fa-clone"></i>
+              <p>genres</p>
+            </a>
+            <a class="link" href="#">
+              <i class="fa-solid fa-circle-plus"></i>
+              <p>new</p>
+            </a>
+            <a class="link" href="#">
+              <i class="fa-solid fa-compass"></i>
+              <p>discover</p>
+            </a>
+            <a class="link" href="#">
+              <i class="fa-solid fa-clock"></i>
+              <p>coming soon</p>
+            </a>
+          </div>
+  
+          <!-- Account -->
+          <div class="account nav-links">
+            <h2>Account</h2>
+            <a class="link" href="#">
+              <i class="fa-solid fa-user"></i>
+              <p>my account</p>
+            </a>
+            <a class="link" href="#">
+              <i class="fa-solid fa-film"></i>
+              <p>my movies</p>
+            </a>
+            <a class="link" href="#">
+              <i class="fa-regular fa-bookmark"></i>
+              <p>my watchlist</p>
+            </a>
+          </div>
+  
+          <!-- General -->
+          <div class="general nav-links">
+            <h2>General</h2>
+            <a class="link" href="#">
+              <i class="fa-solid fa-gear"></i>
+              <p>Settings</p>
+            </a>
+            <a class="link" href="#">
+              <i class="fa-solid fa-circle-info"></i>
+              <p>help</p>
+            </a>
+            <a class="link" href="#">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <p>log out</p>
+            </a>
+          </div>
+        </div>
+       
+      </nav>
+
+      <!--------------  Main content -------------->
+      <nav class="main-content container-padding">
+        <!-- Buttons -->
+        <div class="content-buttons-container">
+          <button class="content-btn current-content">Movies</button>
+          <button class="content-btn">collections</button>
+          <button class="content-btn">Kids</button>
+        </div>
+
+        <!-- Movies -->
+        <div class="movies">
+          <div class="content">
+            <!-- Banner -->
+            <div class="banner">
+              <div class="banner-text">
+                <h1>Spiderman</h1>
+                <p>Action, adventure, comedy <span class="bold">%98 Match</span></p>
+                <div class="banner-buttons">
+                  <button class="watch-btn">
+                    <i class="fa-solid fa-play"></i>
+                    <p>Watch for €3,99</p>
+                  </button>
+                  <button class="watchlist-btn"><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Continue Watching -->
+            <section class="content-section">
+              <!-- Header -->
+              <div class="section-header">
+                <button class="section-header-btn">Continue watching</button>
+                <div class="scroll-btn-container">
+                  <button class="scroll-btn scroll-continue-left scroll-btn-left">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                  <button class="scroll-btn scroll-continue-right scroll-btn-right">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Movies -->
+              <div class="movies-container continue-container">
+                <div class="continue-watching-movie">
+                  <a href="#">
+                    <div class="movie-banner banner-1">
+                      <div class="watch-balk balk-1"></div>
+                      <p>The Matrix Resurrections</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="continue-watching-movie">
+                  <a href="#">
+                    <div class="movie-banner banner-2">
+                      <div class="watch-balk balk-2"></div>
+                      <p>no time to die</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="continue-watching-movie">
+                  <a href="#">
+                    <div class="movie-banner banner-3">
+                      <div class="watch-balk balk-3"></div>
+                      <p>Encanto</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="continue-watching-movie">
+                  <a href="#">
+                    <div class="movie-banner banner-4">
+                      <div class="watch-balk balk-3"></div>
+                      <p>fifthy shades darker</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="continue-watching-movie">
+                  <a href="#">
+                    <div class="movie-banner banner-5">
+                      <div class="watch-balk balk-1"></div>
+                      <p>Ghostbuster afterlive</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="continue-watching-movie">
+                  <a href="#">
+                    <div class="movie-banner banner-6">
+                      <div class="watch-balk balk-3"></div>
+                      <p>Joker</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <!-- Best choices for you -->
+            <section class="content-section">
+              <!-- Header -->
+              <div class="section-header">
+                <button class="section-header-btn">Best choices for you</button>
+                <div class="scroll-btn-container">
+                  <button class="scroll-btn scroll-btn-left">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                  <button class="scroll-btn scroll-btn-right">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Movies -->
+              <div class="movies-container movies-container-style">
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/joker.jpg" alt="" />
+                    <p>The Joker</p>
+                  </a>
+                </div>
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/captainmarvel.jpeg" alt="" />
+                    <p>Captain Marvel</p>
+                  </a>
+                </div>
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/avengersendgame.webp" alt="" />
+                    <p>Avengers endgame</p>
+                  </a>
+                </div>
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/astarisborn.jpeg" alt="" />
+                    <p>a star is born</p>
+                  </a>
+                </div>
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/shangchi.jpg" alt="" />
+                    <p>shang-chi</p>
+                  </a>
+                </div>
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/fifthyshadesdarker.jpeg" alt="" />
+                    <p>fifthy shades darker</p>
+                  </a>
+                </div>
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/batman2022.jpeg" alt="" />
+                    <p>batman</p>
+                  </a>
+                </div>
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/wonderwoman.jpeg" alt="" />
+                    <p>wonder woman</p>
+                  </a>
+                </div>
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/gozillavskong.jpeg" alt="" />
+                    <p>godzilla vs. kong</p>
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <!-- Watch again -->
+            <section class="content-section">
+              <!-- Header -->
+              <div class="section-header">
+                <button class="section-header-btn">Watch again</button>
+                <div class="scroll-btn-container">
+                  <button class="scroll-btn scroll-btn-left">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                  <button class="scroll-btn scroll-btn-right">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Movies -->
+              <div class="movies-container movies-container-style">
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/thecolony.jpg" alt="" />
+                    <p>The colony</p>
+                  </a>
+                </div>
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/us.webp" alt="" />
+                    <p>us</p>
+                  </a>
+                </div>
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/projectpower.jpeg" alt="" />
+                    <p>project power</p>
+                  </a>
+                </div>
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/moonlight.jpeg" alt="" />
+                    <p>moonlight</p>
+                  </a>
+                </div>
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/harrypotter.jpeg" alt="" />
+                    <p>harry potter</p>
+                  </a>
+                </div>
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/fifthyshadesdarker.jpeg" alt="" />
+                    <p>fifthy shades darker</p>
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <!-- Only on pathe home-->
+            <section class="content-section">
+              <!-- Header -->
+              <div class="section-header">
+                <button class="section-header-btn">Only on pathe home</button>
+                <div class="scroll-btn-container">
+                  <button class="scroll-btn scroll-btn-left">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                  <button class="scroll-btn scroll-btn-right">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Movies -->
+              <div class="movies-container movies-container-style">
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/joker.jpg" alt="" />
+                    <p>The Joker</p>
+                  </a>
+                </div>
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/captainmarvel.jpeg" alt="" />
+                    <p>Captain Marvel</p>
+                  </a>
+                </div>
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/avengersendgame.webp" alt="" />
+                    <p>Avengers endgame</p>
+                  </a>
+                </div>
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/astarisborn.jpeg" alt="" />
+                    <p>a star is born</p>
+                  </a>
+                </div>
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/encanto.jpeg" alt="" />
+                    <p>encanto</p>
+                  </a>
+                </div>
+                <div class="movie">
+                  <a href="#">
+                    <img src="./images/movies/fifthyshadesdarker.jpeg" alt="" />
+                    <p>fifthy shades darker</p>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- Collecties -->
+        <div class="collections"></div>
+
+        <!-- Kids -->
+        <div class="kids"></div>
+      </nav>
+
+      <!--------------  Suggested movies / favorites -------------->
+      <aside class="container-padding">
+        <!-- Search -->
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="search" />
+        </div>
+
+        <!-- Populair -->
+        <div class="aside-movies">
+          <h3>Populair</h3>
+          <div class="aside-movie">
+            <a href=""><img src="./images/movies/jamesbond.jpeg" alt="" /></a>
+            <div class="aside-movie-info">
+              <a href="">no time to die</a>
+              <p>action</p>
+              <p>2 h 19 min | 2021</p>
+              <div class="movie-rating">
+                <i class="fa-brands fa-imdb"></i>
+                <p>8.2</p>
+              </div>
+            </div>
+          </div>
+          <div class="aside-movie">
+            <a href=""><img src="./images/movies/matrix.jpg" alt="" /></a>
+            <div class="aside-movie-info">
+              <a href="">matrix</a>
+              <p>action, sci-fi</p>
+              <p>3 h 19 min | 2019</p>
+              <div class="movie-rating">
+                <i class="fa-brands fa-imdb"></i>
+                <p>8.2</p>
+              </div>
+            </div>
+          </div>
+          <div class="aside-movie">
+            <a href=""><img src="./images/movies/dunc.webp" alt="" /></a>
+            <div class="aside-movie-info">
+              <a href="">dunc</a>
+              <p>action, sci-fi</p>
+              <p>2 h 25 min | 2021</p>
+              <div class="movie-rating">
+                <i class="fa-brands fa-imdb"></i>
+                <p>8.2</p>
+              </div>
+            </div>
+          </div>
+         
+          <button class="seemore-btn">see more</button>
+        </div>
+
+        <!-- Favorites -->
+        <div class="aside-movies">
+          <h3>favorites</h3>
+          <div class="aside-movie">
+            <a href=""><img src="./images/movies/avengersendgame.webp" alt="" /></a>
+            <div class="aside-movie-info">
+              <a href="">Avengers endgame</a>
+              <p>action, sci-fi</p>
+              <p>3 h 19 min | 2019</p>
+              <div class="movie-rating">
+                <i class="fa-brands fa-imdb"></i>
+                <p>8.2</p>
+              </div>
+            </div>
+          </div>
+         
+          <div class="aside-movie">
+            <a href=""><img src="./images/movies/freeguy.jpg" alt="" /></a>
+            <div class="aside-movie-info">
+              <a href="">free guy</a>
+              <p>action, sci-fi</p>
+              <p>3 h 19 min | 2019</p>
+              <div class="movie-rating">
+                <i class="fa-brands fa-imdb"></i>
+                <p>8.2</p>
+              </div>
+            </div>
+          </div>
+         
+          <div class="aside-movie">
+            <a href=""><img src="./images/movies/avatar.jpg" alt="" /></a>
+            <div class="aside-movie-info">
+              <a href="">Avatar</a>
+              <p>action, sci-fi</p>
+              <p>3 h 19 min | 2019</p>
+              <div class="movie-rating">
+                <i class="fa-brands fa-imdb"></i>
+                <p>8.2</p>
+              </div>
+            </div>
+          </div>
+         
+          <button class="seemore-btn">see more</button>
+        </div>
+      </aside>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

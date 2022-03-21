@@ -1,0 +1,120 @@
+/* Ipad pro */
+@media only screen and (max-width: 1050px) {
+/* -----------4. Areas ------------ */
+    .container {
+        grid-template-columns: 1fr 3fr;
+    }
+    aside {
+        display: none;
+    }
+}
+
+
+/* Phones */
+@media only screen and (max-width: 450px) {
+/* -----------4. Areas ------------ */
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+/* -----------4.1 Menu: general ------------ */
+
+/* Dropdown */
+    .menu {
+        display: none;
+    }
+
+    .nav-menu {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       padding: 2em 2em 0 2em;
+   }
+
+   .nav-dropdown {
+       display: inherit;
+   }
+
+   .nav-dropdown button {
+    font-size: 1.6em;
+    border: none;
+    outline: none;
+    background: transparent;
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    text-align: right;
+    background: var(--bg-color);
+    height: 90vh;
+    width: 100%;
+    padding: 1em;
+    z-index: 1;
+    animation: slideIn 1s ease-in-out;
+  }
+
+  .dropdown-menu-container {
+      display: grid;
+      margin-left: 1em;
+  }
+
+  /* Menu */
+  .dropdown-menu .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .dropdown-menu p {
+      font-size: 1.1em;
+  }
+
+  .dropdown-menu i {
+    margin-right: 1em;
+  }
+
+  .current {
+      border: none;
+  }
+
+  .current p {
+      color: var(--accent-color);
+  }
+
+  @keyframes slideIn {
+      0% {
+          right: -100%;
+      }
+      100% {
+          right: 0;
+      }
+  }
+
+  /* 4.2.b Movies: Continue Watching */
+  .movies-container {
+      gap: 1em;
+  }
+
+  .continue-watching-movie {
+      min-height: 15vh;
+      flex: 0 0 50%;
+  }
+
+  .continue-watching-movie:hover::before {
+      display: none;
+  }
+
+  /* 4.2 Movies */
+  .movies-container-style {
+      gap: 1em;
+  }
+
+  .movie {
+      flex: 0 0 30%;
+  }
+}   
+
+
